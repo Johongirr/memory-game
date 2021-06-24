@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Memory Game</title>
+</head>
+<body>
+
+   
+    <main class="main">
+        <section class="result main__result">
+            <header class="result__header">
+                <h2 class="result__title heading">
+                    YOU WON!!!
+                </h2>
+            </header>
+            <div class="result__score-box">
+                You won in  
+                
+                <div class="result__winning-time">
+                    <time class="result__winning-time-minutes">
+
+                    </time>
+                     minutes
+                    <time class="result__winning-time-seconds">
+
+                    </time>
+                     seconds,
+
+                     using
+                    <output class="result__winning-in-moves">
+
+                    </output>
+                    moves
+                </div>
+            </div>
+            <button class="retry-btn restart-btn">
+                REPLAY
+            </button>
+        </section>
+        <header class="header main__header">
+            <h1 class="header__title heading">
+                Memory Game
+            </h1>
+        </header>
+        <section class="main__game-controls">
+            <div class="main__game-time-box">
+                <output class="main__game-time">
+                    00:00
+                </output>
+            </div>
+                <div class="main__game-tries-box">
+                    <output class="main__game-tries">
+                        0
+                    </output>
+                    <p class="main__game-tries-text">
+                        Tries
+                    </p>
+                </div>
+            <button class="main__game-redo-btn  restart-btn">
+                <i class="fas fa-redo"></i>
+            </button>
+        </section>
+        <div class="main__container">
+            <section class="cards">
+                <section class="cards__row cards__row-1">
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            A
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            I
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            J
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+                            
+                        </button>
+                        <button class="card__side card__side--back">
+                            C
+                        </button>
+                    </div>
+                    <div class="card">
+                          <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            D
+                        </button>
+                    </div>
+                     
+                </section>
+                <section class="cards__row cards__row-2">
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            E
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            E
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            F
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            G
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            C 
+                        </button>
+                    </div>
+                     
+                </section>
+                <section class="cards__row cards__row-3">
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            G
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            D
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            H 
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            B
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            I
+                        </button>
+                    </div>
+                    
+                </section>
+                <section class="cards__row cards__row-4">
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            J
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            H
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back"> 
+                            B 
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            F
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button class="card__side card__side--front">
+    
+                        </button>
+                        <button class="card__side card__side--back">
+                            A  
+                        </button>
+                    </div>
+                     
+                </section>
+                
+            </section>
+        </div>
+    </main>
+    <script src="index.min.js" defer></script>
+</body>
+</html>
